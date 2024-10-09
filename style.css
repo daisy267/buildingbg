@@ -1,0 +1,101 @@
+/* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body & container styling */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Neutral background behind the small building image */
+}
+
+/* Styling for login form container */
+.login-container {
+    width: 350px; /* Width to be adjusted for smaller building image */
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.pngplay.com/wp-content/uploads/7/Building-PNG-Photo-Image.png'); /* Building background */
+    background-size: contain; /* Ensure the building doesn't stretch */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5); /* Full shadow that covers the background */
+}
+
+/* Styling for login form */
+.login-form {
+    background: rgba(0, 0, 0, 0.7); /* Darker, semi-transparent background for the form */
+    padding: 40px;
+    border-radius: 20px; /* Rounded corners for form */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Increased shadow */
+    z-index: 1; /* Ensure the form stays on top of the background */
+}
+
+/* Header styling */
+h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px; /* Rounded input fields */
+    background: rgba(255, 255, 255, 0.2); /* Light transparency */
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    outline: none;
+}
+
+/* Placeholder text styling */
+input::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Submit button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px; /* Rounded button */
+    background-color: #007bff; /* Bright blue */
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .login-form {
+        width: 280px;
+    }
+}
